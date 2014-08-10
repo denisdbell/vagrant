@@ -1,0 +1,2 @@
+Testing vagrant shared folder
+again

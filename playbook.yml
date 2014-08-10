@@ -1,0 +1,11 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+  - name: install git
+    apt: pkg=git state=latest
+  - name: install python
+    apt: pkg=python state=latest
+  - name: install python-setuptools
+    apt: pkg=python-setuptools state=latest
+  - easy_install: name=robotframework
